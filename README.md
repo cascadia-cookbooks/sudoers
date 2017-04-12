@@ -11,7 +11,7 @@ that do not end in '~' or contain a '.' character.
 Note that all files in this directory should be mode 0440.
 
 ## Attributes
-* `node['sudoers_d']` = array of files to create inside `/etc/sudoers.d/`.
+* `node['sudo']['sudoers_d']` = array of files to create inside `/etc/sudoers.d/`.
 
 ## Usage
 Here's an example of adding a NOPASSWD to an admin group named `adm`. It will
