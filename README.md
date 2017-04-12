@@ -25,9 +25,7 @@ override_attributes(
     ...,
     'sudo' => {
         'sudoers_d' => {
-            'admins' => {
-                '%adm ALL=(ALL) NOPASSWD:ALL'
-            }
+            'admins' => '%adm ALL=(ALL) NOPASSWD:ALL'
         }
     },
     ...,
