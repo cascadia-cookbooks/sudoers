@@ -9,7 +9,7 @@ end
 
 node['sudo']['sudoers_d'].each do |name,content|
     file "/etc/sudoers.d/#{name}" do
-        content content
+        content "#{content}\n"
         owner  'root'
         group  'root'
         mode   0440
